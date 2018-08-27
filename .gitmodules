@@ -1,0 +1,6 @@
+[submodule "CppHttpClient"]
+	path = CppHttpClient
+	url = ./CppHttpClient
+[submodule "CppHttpServer"]
+	path = CppHttpServer
+	url = ./CppHttpServer/
