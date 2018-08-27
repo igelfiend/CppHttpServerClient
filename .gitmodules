@@ -1,6 +1,6 @@
 [submodule "CppHttpClient"]
 	path = CppHttpClient
-	url = ./CppHttpClient
+	url = https://github.com/igelfiend/CppHttpClient.git
 [submodule "CppHttpServer"]
 	path = CppHttpServer
-	url = ./CppHttpServer/
+	url = https://github.com/igelfiend/CppHttpServer.git
