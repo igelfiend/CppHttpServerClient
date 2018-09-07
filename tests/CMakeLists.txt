@@ -24,6 +24,20 @@ set_tests_properties(TestingBadAddress
                     PROPERTIES
                     PASS_REGULAR_EXPRESSION "Initing address error")
 
+add_test(NAME TestingDifferentServerAndClientAddress
+        COMMAND test1
+        127.0.0.1 8000 ../bin/ 127.0.0.2 8000 HttpClient.exe)
+set_tests_properties(TestingDifferentServerAndClientAddress
+                    PROPERTIES
+                    PASS_REGULAR_EXPRESSION "Client connection error")
+
+add_test(NAME TestingDifferentServerAndClientPort
+        COMMAND test1
+        127.0.0.1 8000 ../bin/ 127.0.0.2 8000 HttpClient.exe)
+set_tests_properties(TestingDifferentServerAndClientPort
+                    PROPERTIES
+                    PASS_REGULAR_EXPRESSION "Client connection error")
+
 add_test(NAME TestingBadSocket
         COMMAND test1
         127.0.0.0 8000 ../bin/ 127.0.0.1 8000 HttpClient.exe)
