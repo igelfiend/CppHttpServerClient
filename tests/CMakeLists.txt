@@ -33,7 +33,7 @@ set_tests_properties(TestingDifferentServerAndClientAddress
 
 add_test(NAME TestingDifferentServerAndClientPort
         COMMAND test1
-        127.0.0.1 8000 ../bin/ 127.0.0.2 8000 HttpClient.exe)
+        127.0.0.1 8000 ../bin/ 127.0.0.2 8001 HttpClient.exe)
 set_tests_properties(TestingDifferentServerAndClientPort
                     PROPERTIES
                     PASS_REGULAR_EXPRESSION "Client connection error")
